@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="containerCriacao">
+
+        <h1 class="tituloClaro">CRIAR CATEGORIA DE COMUNIDADE</h1>
+
+        <form>
+            
+            <label for="nome" class="rotulo">NOME</label>
+            <input type="text" class="inputTexto" name="nome" id="nome" placeholder="Digite o nome da categoria de comunidade">
+    
+            <label for="descricao" class="rotulo">DESCRIÇÃO</label>
+            <input type="text" class="inputTexto" name="descricao" id="descricao" placeholder="Digite a descrição da categoria de comunidade">
+            
+            <label for="apelido" class="rotulo">APELIDO</label>
+            <input type="text" class="inputTexto" name="apelido" id="apelido" placeholder="Digite seu apelido">
+
+            <br><br>
+
+            <section class="form-buttons">
+            <input type="button" class="botaoClaro" value="CRIAR CATEGORIA" onclick="criar()"><br>
+            <input type="reset" class="botaoClaro" value="CANCELAR">
+            </section>
+        </form>
+    </div>
+
+    <div class="container_retorno">
+        <div class="container_aligner">
+        <p id="mensagem_nome"></p>
+        <p id="mensagem_descricao"></p>
+        <p id="mensagem_apelido"></p>
+        <p id="mensagem_branco"></p>
+        <p id="mensagem_sucesso"></p>
+        </div>
+    </div>
+</body>
+</html>
